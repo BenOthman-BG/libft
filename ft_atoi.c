@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -34,11 +33,4 @@ int	ft_atoi(const char *str)
 		str++;
 	}
 	return ((int)(signe * number));
-}
-
-int main (int ac, char **av)
-{
-	if (ac == 2)
-	printf("ft_atoi : %d\n", ft_atoi(av[1]));
-	printf("atoi : %d\n", atoi(av[1]));
 }

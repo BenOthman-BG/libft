@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obenyahy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/17 16:50:18 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/17 19:01:46 by obenyahy         ###   ########.fr       */
+/*   Created: 2026/10/18 11:52:21 by obenyahy          #+#    #+#             */
+/*   Updated: 2026/10/18 11:52:34 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h" 
-#include "stdio.h"
 
 static void	fill(char const *s, unsigned int start, size_t len, char *p)
 {

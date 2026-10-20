@@ -6,7 +6,7 @@
 /*   By: obenyahy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 12:45:59 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/19 15:03:45 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:44:42 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,8 +73,8 @@ char	*ft_itoa(int n)
 	return (p);
 }
 
-int main ()
+/*int main ()
 {
 	printf("%s\n", ft_itoa(-201));
 	return (0);
-}
+}*/

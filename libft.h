@@ -6,7 +6,7 @@
 /*   By: obenyahy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:24:47 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/18 11:40:39 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/20 15:55:50 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include "stddef.h"
 #include "stdlib.h"
+#include "unistd.h"
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

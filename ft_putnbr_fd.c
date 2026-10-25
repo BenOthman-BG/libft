@@ -6,7 +6,7 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:16:33 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/20 17:15:52 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/25 10:49:25 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	ft_write_number(long n, int fd)
 {
 	if (n > 9)
-		ft_putnbr_fd(n / 10, fd);
+		ft_write_number(n / 10, fd);
 	write(fd, &"0123456789"[n % 10], 1);
 }
 

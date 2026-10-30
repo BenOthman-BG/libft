@@ -6,7 +6,7 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:08:07 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/20 16:13:10 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:11:14 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ void	ft_putendl_fd(char *s, int fd)
 	if (fd < 0)
 		return ;
 	len = ft_strlen(s);
-	write (fd,  s, len);
+	write (fd, s, len);
 	write (fd, "\n", 1);
 }

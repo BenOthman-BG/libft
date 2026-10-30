@@ -6,12 +6,11 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:20:31 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/20 14:42:35 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:03:49 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -34,21 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new[i] = '\0';
 	return (new);
 }
-/*char	f1(unsigned int a, char c)
-{
-	(void)c;
-	return ((char)('0' + a));
-}
-
-int main ()
-{
-	char *p;
-
-	p = ft_strmapi("hellow world", f1);
-	if (p == NULL)
-		printf("NULL\n");
-	else
-		printf("%s\n", p);
-	free(p);
-	return (0);
-}*/

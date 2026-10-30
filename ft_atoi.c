@@ -6,7 +6,7 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 13:44:00 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/25 13:44:06 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/27 16:20:59 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
 	number = 0;
 	while (*str >= '0' && *str <= '9')
 	{
-		number = number * 10 + *str - 48;
+		number = number * 10 + *str - '0';
 		str++;
 	}
 	return ((int)(signe * number));

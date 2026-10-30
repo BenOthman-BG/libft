@@ -6,12 +6,11 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 13:45:56 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/25 13:45:58 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:17:43 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	get_len(int n)
 {
@@ -72,9 +71,3 @@ char	*ft_itoa(int n)
 	getstr(p, n, len);
 	return (p);
 }
-
-/*int main ()
-{
-	printf("%s\n", ft_itoa(-201));
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 11:58:59 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/19 06:46:51 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:10:46 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	
+
 	if (s1 == NULL || set == NULL)
 		return (NULL);
 	start = 0;

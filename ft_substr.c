@@ -6,24 +6,11 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 11:52:21 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/18 11:52:34 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:01:29 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h" 
-
-static void	fill(char const *s, unsigned int start, size_t len, char *p)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i + start] != '\0' && i < len)
-	{
-		p[i] = s[i + start];
-		i++;
-	}
-	p[i] = '\0';
-}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -34,34 +21,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	len_t = ft_strlen(s);
 	if (start >= len_t)
-	{
-		p = malloc(1 * sizeof(char));
-		if (p == NULL)
-			return (NULL);
-		p[0] = '\0';
-		return (p);
-	}
+		return (ft_strdup(""));
 	if (len > len_t - start)
 		len = len_t - start;
 	p = malloc((len + 1) * sizeof(char));
 	if (p == NULL)
 		return (NULL);
-	fill(s, start, len, p);
+	ft_strlcpy(p, s + start, len + 1);
 	return (p);
 }
-/*int main ()
-{
-	char *p;
-
-	p = ft_substr("hello world", 4, 9000);
-	if (p == NULL)
-		printf("NULL\n");
-	else
-	{
-		if (p[0] == '\0')
-			printf("end\n");
-		else
-			printf("%s\n", p);
-	}
-	return (0);
-}*/

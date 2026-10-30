@@ -6,7 +6,7 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:16:33 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/25 10:49:25 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:11:37 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_putnbr_fd(int n, int fd)
 	long	a;
 
 	a = n;
-	if ( a < 0)
+	if (a < 0)
 	{
 		write(fd, "-", 1);
 		a = (-1) * a;

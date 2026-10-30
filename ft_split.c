@@ -6,7 +6,7 @@
 /*   By: obenyahy <obenyahy@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 06:49:37 by obenyahy          #+#    #+#             */
-/*   Updated: 2026/10/19 11:29:06 by obenyahy         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:03:21 by obenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,25 +83,3 @@ char	**ft_split(char const *s, char c)
 	arr[i] = NULL;
 	return (arr);
 }
-/*int main (int ac, char **av)
-{
-	if (ac == 3)
-	{
-		char **p;
-		
-		p = ft_split(av[1], av[2][0]);
-		if (p == NULL)
-		{
-			printf("NULL\n");
-			return(0);
-		}
-		while (*p != NULL)
-		{
-			printf("%s\n", *p);
-			p++;
-		}
-		printf("NULLend\n");
-		
-	}
-	return (0);
-}*/

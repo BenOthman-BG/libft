@@ -21,12 +21,10 @@ OBJS = $(SRC:.c=.o)
 all: $(NAME)
 
 %.o: %.c $(HEADER)
-	$(CC) $(CFLAGS) $(H) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-so:
-	gcc -nostartfiles -shared -o libft.so $(OBJS) -lbsd
 
 clean:
 	rm -f $(OBJS)

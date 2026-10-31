@@ -30,6 +30,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			if (content != NULL)
 				del(content);
 			ft_lstclear(&header, del);
+			return (NULL);
 		}
 		ft_lstadd_back(&header, node);
 		lst = lst->next;
